@@ -31,10 +31,14 @@ public class LineComparison {
         System.out.println("length of the line2 is "+length2);
         Double line2 = Double.valueOf(length2);
 
-        if(line1.equals(line2)){
-            System.out.println("Both the lines are equal ");
-        }else{
-            System.out.println("Both the lines are not equal");
+
+        if(line1.compareTo(line2) == 1){
+            System.out.println("Line 1 is greater than Line2");
+        } else if (line1.compareTo(line2) == -1) {
+            System.out.println("Line2 is greater than Line1");
+        }
+        else {
+            System.out.println("Both the lines are equal");
         }
     }
 }
