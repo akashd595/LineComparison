@@ -3,8 +3,7 @@ package com.bridgelabz_line_comparison;
 import java.util.Random;
 
 public class LineComparison {
-    public static void main(String[] args) {
-        System.out.println("Line Comparison Computation Program on Master Branch");
+    public static void lineComparisonInput(){
 
         Random random = new Random();
         int x1 = random.nextInt(10);
@@ -31,6 +30,10 @@ public class LineComparison {
         System.out.println("length of the line2 is "+length2);
         Double line2 = Double.valueOf(length2);
 
+        lineComparing(line1, line2);
+
+    }
+    public static void lineComparing(Double line1, Double line2){
 
         if(line1.compareTo(line2) == 1){
             System.out.println("Line 1 is greater than Line2");
@@ -40,5 +43,11 @@ public class LineComparison {
         else {
             System.out.println("Both the lines are equal");
         }
+    }
+    public static void main(String[] args) {
+
+        System.out.println("Line Comparison Computation Program on Master Branch");
+        lineComparisonInput();
+
     }
 }
